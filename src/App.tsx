@@ -4,6 +4,7 @@ import API from "./utils/API";
 
 function App() {
 	const [reservations, setReservations] = useState<any[]>([]);
+	console.log(reservations);
 
 	useEffect(() => {
 		API.getAll("reservations")
