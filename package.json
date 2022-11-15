@@ -17,6 +17,7 @@
 		"@types/react-dom": "^18.0.8",
 		"axios": "^1.1.3",
 		"bcryptjs": "^2.4.3",
+		"client": "link:",
 		"date-fns": "2.0.0-alpha.7 || >=2.0.0",
 		"fslightbox-react": "1.6.2-2",
 		"jsonwebtoken": "^8.5.1",
