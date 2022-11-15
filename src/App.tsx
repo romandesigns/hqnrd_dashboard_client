@@ -1,31 +1,18 @@
 import { useEffect, useState } from "react";
-import "./App.css";
-import API from "./utils/API";
+import { io } from "socket.io-client";
 
 function App() {
-	const [reservations, setReservations] = useState<any[]>([]);
-	console.log(reservations);
+	const [socket, setSocket] = useState<any>(null);
 
 	useEffect(() => {
-		API.getAll("reservations")
-			.then((res) => setReservations(res.data))
-			.catch((err) => console.log(err));
+		setSocket(io("http://localhost:4040"));
 	}, []);
 
-	return (
-		<div className="App">
-			<h1>Reservations</h1>
-			<ul>
-				{reservations.map((reservation) => (
-					<li key={reservation._id}>
-						<p>
-							Unidad: {reservation.unit} - Precio: {reservation.unitPrice}
-						</p>
-					</li>
-				))}
-			</ul>
-		</div>
-	);
+	useEffect(() => {
+		if (!socket) return;
+	}, [socket]);
+
+	return <div className="App">Hello world</div>;
 }
 
 export default App;

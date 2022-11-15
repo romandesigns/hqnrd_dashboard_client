@@ -1,0 +1,11 @@
+.simplebar-content {
+	height: inherit;
+}
+
+.simplebar-content-wrapper {
+	overflow-x: hidden;
+}
+
+div[data-simplebar="init"] {
+	height: inherit;
+}

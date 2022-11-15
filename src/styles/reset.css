@@ -1,0 +1,21 @@
+form input {
+	border: none;
+	font-family: var(--serif);
+	box-shadow: 0 0 0 1px var(--neutral-0-1);
+	margin-bottom: 1rem;
+	display: block;
+	width: 100%;
+	padding: 0.9rem 1rem;
+	color: var(--neutral-1-1);
+	border-radius: var(--btn-radius);
+	-webkit-border-radius: var(--btn-radius);
+	-moz-border-radius: var(--btn-radius);
+	-ms-border-radius: var(--btn-radius);
+	-o-border-radius: var(--btn-radius);
+}
+
+input[type="submit"],
+input[type="reset"] {
+	margin: 2rem 0 0rem;
+	padding: 1rem 0;
+}

@@ -1,0 +1,12 @@
+.inputUpload {
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+	border-radius: var(--btn-radius);
+	color: var(--light);
+	padding: 1rem;
+	font-weight: bold;
+	margin-top: 1.5rem;
+	background-color: var(--gray-3);
+	box-shadow: 0 5px 15px -3px var(--gray-3);
+}
